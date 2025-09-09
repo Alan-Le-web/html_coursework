@@ -10,12 +10,11 @@
 
 <body>
 	<header class="header">
-		<section class="header__panel">
+		<div class="header__panel container">
+			<a href="#" class="header__menu-logo-link">
+				<img src="svg/noemi-logo.svg" alt="Logo" class="header__menu-logo">
+			</a>
 			<nav class="header__menu">
-				<a href="#" class="header__menu-logo-link">
-					<img src="svg/noemi-logo.svg" alt="Logo" class="header__menu-logo">
-				</a>
-
 				<ul class="header__menu-list">
 					<li class="header__menu-list-item">
 						<a href="#" class="header__menu-link">Главная</a>
@@ -37,8 +36,12 @@
 					</li>
 				</ul>
 			</nav>
+		</div>
+	</header>
 
-			<picture class="header__background">
+	<main>
+		<section class="top">
+			<picture class="top__background">
 				<!-- <source
 					media="(min-width:768px)"
 					srcset="images/banner-bg.jpg">
@@ -48,16 +51,81 @@
 				<source
 					media="(min-width:268px)"
 					srcset="images/banner-mobile.jpg"> -->
-				<img src="images/banner-bg.jpg" alt="баннер" class="header__bg_image">
+				<img src="images/banner-bg.jpg" alt="баннер" class="top__bg_image">
 			</picture>
 
-			<h1 class="header__pagetitle">Блог о творчестве, спорте, <br>
-				и образе жизни
-			</h1>
+			<div class="top__body container">
+				<h1 class="top__pagetitle">Блог о творчестве, спорте, <br>
+					и образе жизни
+				</h1>
+			</div>
 		</section>
-	</header>
+		<section class="trends">
+			<div class="trends__block">
+				<h2 class="trends__block__title">
+					Сейчас в тренде
+				</h2>
+				<span class="trend__line"> </span>
+			</div>
 
-	<main>
+			<div class="trends__cards">
+				<div class="trend__card">
+					<div class="trend__content">
+						<div class="tags">
+							<h3 class="tag">Lifestyle</h3>
+							<h3 class="tag">interior</h3>
+						</div>
+						<h2 class="trend__card__title">
+							Сейчас в тренде: сад <br> на подоконнике
+						</h2>
+					</div>
+					<div class="trend__card__background">
+						<img src="images/trend1.jpg" alt="Сад на подоконнике">
+					</div>
+				</div>
+				<div class="trend__card">
+					<div class="trend__content">
+						<div class="tags">
+							<h3 class="tag">Food</h3>
+						</div>
+						<h2 class="trend__card__title">
+							Сыры на красивых<br>картинках из интернета:<br>какие они на вкус?
+						</h2>
+					</div>
+					<div class="trend__card__background">
+						<img src="images/trend2.jpg" alt="Сыры на картинках, какие на вкус">
+					</div>
+				</div>
+				<div class="trend__card">
+					<div class="trend__content">
+						<div class="tags">
+							<h3 class="tag">Lifestyle</h3>
+							<h3 class="tag">Travel</h3>
+						</div>
+						<h2 class="trend__card__title">
+							Собираемся в первый<br>поход в горы
+						</h2>
+					</div>
+					<div class="trend__card__background">
+						<img src="images/trend3.jpg" alt="Поход в горы">
+					</div>
+				</div>
+				<div class="trend__card">
+					<div class="trend__content">
+						<div class="tags">
+							<h3 class="tag">Food</h3>
+							<h3 class="tag">Health</h3>
+						</div>
+						<h2 class="trend__card__title">
+							Сейчас в тренде: сколько<br>витамина с в лимонах?
+						</h2>
+					</div>
+					<div class="trend__card__background">
+						<img src="images/trend4.jpg" alt="Сколько витамина С в лимонах">
+					</div>
+				</div>
+			</div>
+		</section>
 
 	</main>
 
